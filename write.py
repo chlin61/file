@@ -7,6 +7,6 @@ while True:
 	products.append([name,price])
 print(products)
 
-with open('products.txt','w') as f:
+with open('products.csv','w',encoding='utf-8') as f:
 	for p in products:
 		f.write(p[0] + ':' + p[1] + '\n')
